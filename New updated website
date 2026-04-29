@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>850 Bay County Middleman | Wayne Campbell</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap');
+    body { font-family: 'Inter', system_ui, sans-serif; }
+    .hero-bg { background: radial-gradient(circle at 30% 20%, #1a0033 0%, #0a0a1f 55%, #000000 100%); }
+    .gold { color: #fbbf24; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-slate-200">
+
+  <!-- HERO -->
+  <header class="hero-bg min-h-[90vh] flex items-center justify-center text-center relative overflow-hidden">
+    <div class="max-w-2xl px-6 z-10">
+      <div class="flex justify-center mb-2">
+        <span class="text-7xl font-black tracking-[-5px] text-yellow-400">850</span>
+      </div>
+      <h1 class="text-6xl md:text-7xl font-bold text-white tracking-tighter leading-none">BAY COUNTY<br>MIDDLEMAN</h1>
+      <p class="text-3xl text-yellow-300 mt-2 font-medium">Wayne Campbell</p>
+      <p class="text-lg text-slate-400 mt-1">entrepreneur • owner • C.E.O.</p>
+
+      <p class="mt-8 max-w-md mx-auto text-xl">Connecting workers with gigs • businesses with reliable help • inventory with buyers — 24/7 in the 850</p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+        <a href="#contact" class="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-5 px-14 rounded-full text-lg">FREE QUOTE</a>
+        <a href="tel:8506303252" class="border-2 border-yellow-400 hover:bg-white/10 font-bold py-5 px-14 rounded-full text-lg">Call 850-630-3252</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ICON BAR -->
+  <div class="bg-zinc-900 py-6 border-b border-yellow-400/20">
+    <div class="max-w-5xl mx-auto px-6 flex flex-wrap justify-center gap-x-14 gap-y-4 text-center">
+      <div class="flex items-center gap-3"><i class="fas fa-clock text-2xl gold"></i><span class="font-semibold">24/7 Availability</span></div>
+      <div class="flex items-center gap-3"><i class="fas fa-running text-2xl gold"></i><span class="font-semibold">Gigs &amp; Side Hustles</span></div>
+      <div class="flex items-center gap-3"><i class="fas fa-wallet text-2xl gold"></i><span class="font-semibold">Cash Opportunities</span></div>
+      <div class="flex items-center gap-3"><i class="fas fa-gem text-2xl gold"></i><span class="font-semibold">Premium Networking</span></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="py-16 px-6 bg-black">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl font-bold gold mb-6">I Make Connections Happen</h2>
+      <p class="text-lg text-slate-300">Hardworking people get matched with flexible gigs and reliable work. Local businesses and homeowners get trusted workers fast. Need cash quick? Need help on a project? Have inventory to move? I make it happen — 24/7 across Bay County.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-16 px-6 bg-zinc-900">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center gold mb-10">What I Deliver</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-zinc-950 p-8 rounded-3xl border border-yellow-400/30 hover:border-yellow-400 transition-all">
+          <h3 class="text-2xl font-semibold mb-3 gold">Need Workers?</h3>
+          <p class="text-slate-300">Reliable, hardworking people for any job — fast. No bad hires.</p>
+        </div>
+        <div class="bg-zinc-950 p-8 rounded-3xl border border-yellow-400/30 hover:border-yellow-400 transition-all">
+          <h3 class="text-2xl font-semibold mb-3 gold">Need Cash Fast?</h3>
+          <p class="text-slate-300">Gigs, side hustles, and immediate paying opportunities in Bay County.</p>
+        </div>
+        <div class="bg-zinc-950 p-8 rounded-3xl border border-yellow-400/30 hover:border-yellow-400 transition-all">
+          <h3 class="text-2xl font-semibold mb-3 gold">Sell Your Inventory</h3>
+          <p class="text-slate-300">I connect you with local buyers and move your product quickly.</p>
+        </div>
+        <div class="bg-zinc-950 p-8 rounded-3xl border border-yellow-400/30 hover:border-yellow-400 transition-all">
+          <h3 class="text-2xl font-semibold mb-3 gold">Entrepreneurship &amp; Networking</h3>
+          <p class="text-slate-300">Affiliate programs, business opportunities, and real local connections.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-16 px-6 bg-black">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold text-center gold mb-10">Real People. Real Results.</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-zinc-950 p-8 rounded-3xl border border-yellow-400/30">
+          <p class="text-slate-300">"Wayne found me a crew for my flip in one day. Saved me thousands."</p>
+          <p class="mt-6 text-sm font-semibold">— Mike R., Contractor, Panama City</p>
+        </div>
+        <div class="bg-zinc-950 p-8 rounded-3xl border border-yellow-400/30">
+          <p class="text-slate-300">"Got connected to a side hustle the same day I called. Cash in hand by Friday."</p>
+          <p class="mt-6 text-sm font-semibold">— Sarah T., Bay County</p>
+        </div>
+        <div class="bg-zinc-950 p-8 rounded-3xl border border-yellow-400/30">
+          <p class="text-slate-300">"Moved my entire inventory in 48 hours through his network. Unreal."</p>
+          <p class="mt-6 text-sm font-semibold">— David L., Local Business Owner</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 px-6 bg-zinc-900">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-4xl font-bold text-center gold mb-8">Let's Make It Happen</h2>
+      
+      <form action="https://formspree.io/f/mbllyqjn" method="POST" class="space-y-6">
+        <div class="grid md:grid-cols-2 gap-6">
+          <input type="text" name="name" placeholder="Your Name" required class="w-full bg-zinc-950 border border-yellow-400/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:border-yellow-400">
+          <input type="tel" name="phone" placeholder="Phone Number" class="w-full bg-zinc-950 border border-yellow-400/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:border-yellow-400">
+        </div>
+        <textarea name="message" rows="5" placeholder="What do you need? (workers, gigs, inventory, free quote, etc.)" required class="w-full bg-zinc-950 border border-yellow-400/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:border-yellow-400"></textarea>
+        
+        <button type="submit" class="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-6 rounded-full text-xl transition-all">SEND MESSAGE — I'LL REPLY FAST</button>
+      </form>
+      
+      <div class="text-center mt-10 space-y-4">
+        <a href="tel:8506303252" class="block text-4xl gold font-bold hover:text-yellow-300">850-630-3252</a>
+        <a href="mailto:siltanenwayne@gmail.com" class="block text-xl hover:text-yellow-300">siltanenwayne@gmail.com</a>
+        <a href="https://www.youtube.com/850BayCountyMiddleman" target="_blank" class="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300">
+          <i class="fab fa-youtube text-2xl"></i> Watch on YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-10 text-center border-t border-yellow-400/20">
+    <p class="text-2xl font-bold gold">Wayne Campbell</p>
+    <p class="text-xl">850 Bay County Middleman</p>
+    <p class="mt-6 text-sm text-slate-400">Serving Bay County &amp; Surrounding 850 Areas • Available 24/7</p>
+    <div class="mt-8 flex justify-center gap-6 text-2xl">
+      <a href="tel:8506303252" class="hover:text-yellow-400"><i class="fas fa-phone"></i></a>
+      <a href="mailto:siltanenwayne@gmail.com" class="hover:text-yellow-400"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.youtube.com/850BayCountyMiddleman" target="_blank" class="hover:text-yellow-400"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
