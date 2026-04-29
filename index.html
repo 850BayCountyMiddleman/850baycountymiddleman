@@ -1,1044 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="850 Bay County Middleman — Your trusted local deal connector in Panama City, Lynn Haven, Callaway &amp; all of Bay County, FL. Real estate, boats, contractors &amp; small business deals done right since 2015.">
-    <meta name="keywords" content="Bay County middleman, Panama City broker, 850 deals, Bay County real estate, vehicle sales facilitator, contractor referrals, business brokerage Panama City">
-    
-    <!-- Open Graph / Social Sharing -->
-    <meta property="og:title" content="850 Bay County Middleman | Your Trusted Local Deal Connector">
-    <meta property="og:description" content="Connecting buyers &amp; sellers across Bay County, FL since 2015. Real estate, boats, home services &amp; small business deals — fast, fair, and 100% local.">
-    <meta property="og:image" content="https://picsum.photos/id/1016/1200/630">
-    <meta property="og:image:alt" content="Beautiful St. Andrews Bay at sunset — 850 Bay County Middleman">
-    <meta property="og:url" content="https://850baycountymiddleman.netlify.app">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="850 Bay County Middleman">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="850 Bay County Middleman | Panama City, FL">
-    <meta name="twitter:description" content="Your local middleman for smart deals in Bay County — real estate, vehicles, contractors &amp; more.">
-    <meta name="twitter:image" content="https://picsum.photos/id/1016/1200/630">
-    
-    <title>850 Bay County Middleman | Your Trusted Local Deal Connector | Panama City, FL</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f766e'/%3E%3Ctext x='50' y='68' font-size='52' font-weight='900' fill='white' text-anchor='middle' font-family='system-ui'%3E850%3C/text%3E%3C/svg%3E" type="image/svg+xml">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
-        
-        :root {
-            --primary: #0f766e;
-        }
-        
-        .tail-container {
-            max-width: 1280px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
-        }
-
-        .nav-active {
-            color: #14b8a6;
-            font-weight: 600;
-        }
-
-        .section-header {
-            font-family: 'Playfair Display', Georgia, serif;
-            letter-spacing: -1px;
-        }
-
-        .service-card {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgb(15 118 110 / 0.1), 0 8px 10px -6px rgb(15 118 110 / 0.1);
-        }
-
-        .stat-number {
-            font-variant-numeric: tabular-nums;
-        }
-
-        .deal-badge {
-            background: linear-gradient(135deg, #14b8a6, #0f766e);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 700;
-        }
-
-        .wave-bg {
-            background-image: url('https://picsum.photos/id/1016/2000/1200');
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-        
-        .wave-bg::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to bottom, rgba(15, 118, 110, 0.85), rgba(15, 118, 110, 0.75));
-        }
-
-        .panhandle-bg {
-            background-image: linear-gradient(rgba(15, 118, 110, 0.88), rgba(15, 118, 110, 0.88)), url('https://picsum.photos/id/1036/2000/1200');
-            background-size: cover;
-            background-position: center 30%;
-        }
-
-        .nav-scrolled {
-            background-color: rgba(255,255,255,0.98);
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-        }
-
-        .testimonial-card {
-            transition: transform 0.3s ease;
-        }
-
-        .step-number {
-            width: 48px;
-            height: 48px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.25rem;
-        }
-
-        .florida-accent {
-            color: #14b8a6;
-        }
-
-        .local-map {
-            background-image: url('https://picsum.photos/id/1074/800/600');
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>850 Bay County Middleman | Wayne Campbell</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap');
+    body { font-family: 'Inter', system_ui, sans-serif; }
+    .hero-bg { background: radial-gradient(circle at 30% 20%, #1a0033 0%, #0a0a1f 55%, #000000 100%); }
+    .gold { color: #fbbf24; }
+  </style>
 </head>
-<body class="bg-slate-50 font-sans antialiased">
-    <!-- NAVBAR -->
-    <nav id="navbar" class="bg-white border-b border-slate-200 sticky top-0 z-50 transition-all duration-300">
-        <div class="tail-container">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <div class="flex items-center gap-x-3">
-                    <div class="w-12 h-12 bg-teal-700 rounded-2xl flex items-center justify-center shadow-inner">
-                        <div class="text-white text-3xl font-black tracking-tighter">850</div>
-                    </div>
-                    <div>
-                        <div class="font-black text-3xl tracking-tighter text-slate-900">BAY COUNTY</div>
-                        <div class="text-[10px] font-bold text-teal-700 -mt-1 tracking-[3px]">MIDDLEMAN</div>
-                    </div>
-                </div>
+<body class="bg-zinc-950 text-slate-200">
 
-                <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center gap-x-9 text-sm font-semibold">
-                    <a href="#services" class="text-slate-600 hover:text-teal-700 transition-colors">Services</a>
-                    <a href="#how" class="text-slate-600 hover:text-teal-700 transition-colors">How It Works</a>
-                    <a href="#about" class="text-slate-600 hover:text-teal-700 transition-colors">About</a>
-                    <a href="#testimonials" class="text-slate-600 hover:text-teal-700 transition-colors">Stories</a>
-                    <a href="#contact" class="text-slate-600 hover:text-teal-700 transition-colors">Contact</a>
-                </div>
+  <!-- HERO -->
+  <header class="hero-bg min-h-[90vh] flex items-center justify-center text-center relative overflow-hidden">
+    <div class="max-w-2xl px-6 z-10">
+      <div class="flex justify-center mb-2">
+        <span class="text-7xl font-black tracking-[-5px] text-yellow-400">850</span>
+      </div>
+      <h1 class="text-6xl md:text-7xl font-bold text-white tracking-tighter leading-none">BAY COUNTY<br>MIDDLEMAN</h1>
+      <p class="text-3xl text-yellow-300 mt-2 font-medium">Wayne Campbell</p>
+      <p class="text-lg text-slate-400 mt-1">entrepreneur • owner • C.E.O.</p>
 
-                <!-- CTA Buttons -->
-                <div class="hidden md:flex items-center gap-x-3">
-                    <a href="#contact" 
-                       class="px-6 py-2.5 text-sm font-semibold text-teal-700 hover:bg-teal-50 rounded-3xl transition-colors border border-teal-200">
-                        Get a Quote
-                    </a>
-                    <a href="#contact" 
-                       class="px-6 py-2.5 bg-teal-700 hover:bg-teal-800 text-white text-sm font-semibold rounded-3xl transition-all active:scale-[0.985]">
-                        Start a Deal
-                    </a>
-                </div>
+      <p class="mt-8 max-w-md mx-auto text-xl">Connecting workers with gigs • businesses with reliable help • inventory with buyers — 24/7 in the 850</p>
 
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn"
-                        class="md:hidden w-11 h-11 flex items-center justify-center text-slate-700 hover:bg-slate-100 rounded-2xl transition-colors">
-                    <i class="fa-solid fa-bars text-xl"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200">
-            <div class="tail-container py-6 flex flex-col gap-y-4 text-base font-semibold">
-                <a href="#services" class="py-1.5 text-slate-700">Services</a>
-                <a href="#how" class="py-1.5 text-slate-700">How It Works</a>
-                <a href="#about" class="py-1.5 text-slate-700">About Us</a>
-                <a href="#testimonials" class="py-1.5 text-slate-700">Client Stories</a>
-                <a href="#contact" class="py-1.5 text-slate-700">Contact</a>
-                <div class="pt-4 flex flex-col gap-y-3">
-                    <a href="#contact" class="py-3 text-center border border-teal-200 text-teal-700 font-semibold rounded-3xl">Get a Quote</a>
-                    <a href="#contact" class="py-3 text-center bg-teal-700 text-white font-semibold rounded-3xl">Start a Deal Today</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <header class="wave-bg h-screen flex items-center relative overflow-hidden">
-        <div class="tail-container relative z-10 pt-12">
-            <div class="max-w-3xl">
-                <div class="inline-flex items-center gap-x-2 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-3xl mb-6 shadow-sm">
-                    <div class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></div>
-                    <span class="text-sm font-semibold text-emerald-700 tracking-wide">NOW SERVING ALL OF BAY COUNTY</span>
-                </div>
-                
-                <h1 class="text-white text-6xl md:text-7xl font-black tracking-tighter leading-none mb-6">
-                    YOUR LOCAL<br>
-                    <span class="text-teal-300">MIDDLEMAN</span><br>
-                    IN BAY COUNTY
-                </h1>
-                
-                <p class="max-w-lg text-xl text-white/90 mb-10 leading-relaxed">
-                    Connecting buyers and sellers across Panama City, Lynn Haven, Callaway, 
-                    and every corner of Bay County since 2015. No runaround. No surprises. Just smart local deals.
-                </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#contact" 
-                       class="group inline-flex items-center justify-center gap-x-3 bg-white hover:bg-slate-100 text-teal-800 font-bold px-9 py-4 rounded-3xl text-lg shadow-xl transition-all active:scale-[0.985]">
-                        <span>Start Your Deal</span>
-                        <i class="fa-solid fa-arrow-right group-active:translate-x-1 transition"></i>
-                    </a>
-                    
-                    <a href="#how" 
-                       class="inline-flex items-center justify-center gap-x-3 border-2 border-white/70 hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-3xl text-lg transition-all">
-                        <i class="fa-solid fa-play mr-1"></i>
-                        <span>See How It Works</span>
-                    </a>
-                </div>
-                
-                <div class="flex items-center gap-x-8 mt-12">
-                    <div class="flex -space-x-3">
-                        <img src="https://i.pravatar.cc/32?img=12" class="w-8 h-8 rounded-full ring-2 ring-white" alt="">
-                        <img src="https://i.pravatar.cc/32?img=28" class="w-8 h-8 rounded-full ring-2 ring-white" alt="">
-                        <img src="https://i.pravatar.cc/32?img=47" class="w-8 h-8 rounded-full ring-2 ring-white" alt="">
-                        <img src="https://i.pravatar.cc/32?img=60" class="w-8 h-8 rounded-full ring-2 ring-white" alt="">
-                    </div>
-                    <div class="text-sm text-white/80">
-                        <span class="font-semibold text-white">2,847</span> happy locals helped
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Trust bar at bottom of hero -->
-        <div class="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur py-3.5 border-t border-white/30">
-            <div class="tail-container">
-                <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-xs md:text-sm text-slate-600 font-medium">
-                    <div class="flex items-center gap-x-2">
-                        <i class="fa-solid fa-shield-halved text-teal-600"></i>
-                        <span>Fully Licensed &amp; Bonded</span>
-                    </div>
-                    <div class="hidden md:block w-px h-3 bg-slate-300"></div>
-                    <div>Panama City Chamber of Commerce Member</div>
-                    <div class="hidden md:block w-px h-3 bg-slate-300"></div>
-                    <div>A+ Rated by Better Business Bureau</div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- STATS BAR -->
-    <div class="bg-white border-b border-slate-100">
-        <div class="tail-container py-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="text-5xl font-black text-teal-700 stat-number" data-target="2847">0</div>
-                    <div class="text-sm font-semibold text-slate-500 tracking-wider mt-1">DEALS CLOSED</div>
-                </div>
-                <div>
-                    <div class="text-5xl font-black text-teal-700 stat-number" data-target="98">0</div>
-                    <div class="text-sm font-semibold text-slate-500 tracking-wider mt-1">SATISFACTION RATE</div>
-                </div>
-                <div>
-                    <div class="text-5xl font-black text-teal-700 stat-number" data-target="11">0</div>
-                    <div class="text-sm font-semibold text-slate-500 tracking-wider mt-1">YEARS SERVING BAY COUNTY</div>
-                </div>
-                <div>
-                    <div class="text-5xl font-black text-teal-700 stat-number" data-target="142">0</div>
-                    <div class="text-sm font-semibold text-slate-500 tracking-wider mt-1">5-STAR REVIEWS</div>
-                </div>
-            </div>
-        </div>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+        <a href="#contact" class="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-5 px-14 rounded-full text-lg">FREE QUOTE</a>
+        <a href="tel:8506303252" class="border-2 border-yellow-400 hover:bg-white/10 font-bold py-5 px-14 rounded-full text-lg">Call 850-630-3252</a>
+      </div>
     </div>
+  </header>
 
-    <!-- SERVICES SECTION -->
-    <section id="services" class="py-20 bg-slate-50">
-        <div class="tail-container">
-            <div class="text-center max-w-2xl mx-auto mb-14">
-                <div class="inline text-teal-700 text-xs font-bold tracking-[2px] bg-teal-100 px-4 py-1 rounded-full">WHAT WE DO BEST</div>
-                <h2 class="section-header text-5xl font-black text-slate-900 mt-4 tracking-tighter">Local expertise.<br>Real connections. Zero hassle.</h2>
-                <p class="mt-5 text-xl text-slate-600">We act as your personal middleman for the most important transactions in Bay County. From first conversation to final handshake — we’ve got you covered.</p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Service 1 -->
-                <div class="service-card bg-white rounded-3xl p-8 border border-slate-100 shadow-sm group">
-                    <div class="w-14 h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-teal-700 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-home text-3xl"></i>
-                    </div>
-                    <h3 class="font-bold text-2xl mb-3">Real Estate Connections</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6">FSBO homes, rental matches, and investment properties. We connect motivated sellers with serious buyers — fast.</p>
-                    <div class="flex items-center text-sm text-teal-700 font-semibold">
-                        <span>250+ homes matched last year</span>
-                        <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
-                    </div>
-                </div>
-                
-                <!-- Service 2 -->
-                <div class="service-card bg-white rounded-3xl p-8 border border-slate-100 shadow-sm group">
-                    <div class="w-14 h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-teal-700 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-car text-3xl"></i>
-                    </div>
-                    <h3 class="font-bold text-2xl mb-3">Vehicles &amp; Boats</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6">Trucks, boats, RVs, and classic cars. We handle title transfers, inspections, and negotiations so you get the best price.</p>
-                    <div class="flex items-center text-sm text-teal-700 font-semibold">
-                        <span>180+ vehicles brokered in 2025</span>
-                        <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
-                    </div>
-                </div>
-                
-                <!-- Service 3 -->
-                <div class="service-card bg-white rounded-3xl p-8 border border-slate-100 shadow-sm group">
-                    <div class="w-14 h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-teal-700 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-tools text-3xl"></i>
-                    </div>
-                    <h3 class="font-bold text-2xl mb-3">Home Services Matching</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6">Trusted local contractors for roofs, HVAC, pools, remodeling, and more. Vetted pros with guaranteed pricing.</p>
-                    <div class="flex items-center text-sm text-teal-700 font-semibold">
-                        <span>420+ projects matched</span>
-                        <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
-                    </div>
-                </div>
-                
-                <!-- Service 4 -->
-                <div class="service-card bg-white rounded-3xl p-8 border border-slate-100 shadow-sm group">
-                    <div class="w-14 h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-teal-700 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-briefcase text-3xl"></i>
-                    </div>
-                    <h3 class="font-bold text-2xl mb-3">Small Business Brokerage</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6">Buying or selling a local business? We connect owners with qualified buyers and handle the entire process discreetly.</p>
-                    <div class="flex items-center text-sm text-teal-700 font-semibold">
-                        <span>67 businesses transferred</span>
-                        <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
-                    </div>
-                </div>
-                
-                <!-- Service 5 -->
-                <div class="service-card bg-white rounded-3xl p-8 border border-slate-100 shadow-sm group">
-                    <div class="w-14 h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-teal-700 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-gavel text-3xl"></i>
-                    </div>
-                    <h3 class="font-bold text-2xl mb-3">Estate &amp; Personal Property</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6">Helping families with estate sales, downsizing, and personal property liquidations with compassion and fair market value.</p>
-                    <div class="flex items-center text-sm text-teal-700 font-semibold">
-                        <span>94 estates handled</span>
-                        <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
-                    </div>
-                </div>
-                
-                <!-- Service 6 -->
-                <div class="service-card bg-white rounded-3xl p-8 border border-slate-100 shadow-sm group">
-                    <div class="w-14 h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-teal-700 group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-handshake text-3xl"></i>
-                    </div>
-                    <h3 class="font-bold text-2xl mb-3">Custom Deal Facilitation</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6">Got something unique? We specialize in one-off deals — from waterfront lots to commercial leases and everything in between.</p>
-                    <div class="flex items-center text-sm text-teal-700 font-semibold">
-                        <span>Custom solutions available</span>
-                        <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-10">
-                <a href="#contact" class="inline-flex items-center text-teal-700 hover:text-teal-800 font-semibold group">
-                    Not sure which service you need? Let's talk. 
-                    <i class="fa-solid fa-chevron-right ml-2 group-hover:translate-x-1 transition"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section id="how" class="py-20 bg-white">
-        <div class="tail-container">
-            <div class="grid lg:grid-cols-12 gap-16 items-center">
-                <div class="lg:col-span-5">
-                    <div class="sticky top-24">
-                        <div class="text-teal-700 text-xs font-extrabold tracking-[2.5px]">SIMPLE. TRANSPARENT. LOCAL.</div>
-                        <h2 class="section-header text-6xl font-black tracking-tighter text-slate-900 mt-3 leading-none">How we<br>make deals<br>happen.</h2>
-                        
-                        <p class="mt-6 text-xl text-slate-600 max-w-md">Our proven 4-step process removes the stress and uncertainty from every transaction.</p>
-                        
-                        <div class="mt-8 p-5 bg-teal-50 rounded-3xl border border-teal-100">
-                            <div class="flex items-start gap-4">
-                                <i class="fa-solid fa-clock text-3xl text-teal-600 mt-1"></i>
-                                <div>
-                                    <div class="font-bold">Average close time: 11 days</div>
-                                    <div class="text-sm text-teal-700">From first call to signed agreement</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="lg:col-span-7">
-                    <div class="space-y-6">
-                        <!-- Step 1 -->
-                        <div class="flex gap-6 group">
-                            <div class="step-number flex-shrink-0 bg-teal-700 text-white rounded-2xl shadow-inner">01</div>
-                            <div class="pt-1">
-                                <div class="font-bold text-xl mb-1.5">Tell us what you need</div>
-                                <p class="text-slate-600">Quick call or online form. We listen to your goals, timeline, and budget. No obligation.</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Step 2 -->
-                        <div class="flex gap-6 group">
-                            <div class="step-number flex-shrink-0 bg-teal-700 text-white rounded-2xl shadow-inner">02</div>
-                            <div class="pt-1">
-                                <div class="font-bold text-xl mb-1.5">We match you with the right opportunity</div>
-                                <p class="text-slate-600">Using our deep local network of 1,200+ verified sellers, buyers, contractors, and service providers.</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Step 3 -->
-                        <div class="flex gap-6 group">
-                            <div class="step-number flex-shrink-0 bg-teal-700 text-white rounded-2xl shadow-inner">03</div>
-                            <div class="pt-1">
-                                <div class="font-bold text-xl mb-1.5">We negotiate &amp; protect your interests</div>
-                                <p class="text-slate-600">We handle inspections, paperwork, title work, and negotiations — always on your side.</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Step 4 -->
-                        <div class="flex gap-6 group">
-                            <div class="step-number flex-shrink-0 bg-teal-700 text-white rounded-2xl shadow-inner">04</div>
-                            <div class="pt-1">
-                                <div class="font-bold text-xl mb-1.5">Close with confidence</div>
-                                <p class="text-slate-600">We walk you through every signature. You get exactly what was promised — or we make it right.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHY US / TESTIMONIALS TEASER -->
-    <section class="bg-teal-900 py-16 text-white">
-        <div class="tail-container">
-            <div class="grid md:grid-cols-12 gap-8 items-center">
-                <div class="md:col-span-7">
-                    <h2 class="text-4xl font-black tracking-tight">Why Bay County locals choose us as their middleman.</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10">
-                        <div>
-                            <i class="fa-solid fa-map-marker-alt text-4xl text-teal-400 mb-4"></i>
-                            <div class="font-bold text-xl">Born &amp; Raised Here</div>
-                            <p class="text-teal-200 text-sm mt-2">We know every backroad, every builder, and every good deal happening right now.</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-handshake text-4xl text-teal-400 mb-4"></i>
-                            <div class="font-bold text-xl">Skin in the Game</div>
-                            <p class="text-teal-200 text-sm mt-2">We only get paid when you close. Our success is 100% tied to yours.</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-shield-alt text-4xl text-teal-400 mb-4"></i>
-                            <div class="font-bold text-xl">Ironclad Protection</div>
-                            <p class="text-teal-200 text-sm mt-2">Every deal comes with our written satisfaction guarantee and full transparency.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="md:col-span-5">
-                    <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-9 border border-white/20">
-                        <div class="text-center">
-                            <div class="text-7xl font-black text-white">"The only person I trust to sell my boat."</div>
-                            <div class="mt-6 flex items-center justify-center gap-x-3">
-                                <img src="https://i.pravatar.cc/48?img=32" class="rounded-full ring-2 ring-teal-400" alt="">
-                                <div class="text-left text-sm">
-                                    <div class="font-semibold">Capt. Ron Delgado</div>
-                                    <div class="text-teal-300 text-xs">Lynn Haven • Boat Sale 2025</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section id="testimonials" class="py-20 bg-slate-50">
-        <div class="tail-container">
-            <div class="text-center mb-12">
-                <div class="text-teal-700 text-xs font-extrabold tracking-[2px]">REAL STORIES FROM REAL NEIGHBORS</div>
-                <h2 class="section-header text-5xl font-black tracking-tighter mt-3">Don’t just take our word for it.</h2>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
-                    <div class="flex text-amber-400 mb-4">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <p class="text-slate-700 leading-relaxed">"Sold our family home in Callaway in 9 days for 12% over asking. They found the perfect buyer and handled every single detail. We never even had to meet the buyers. Incredible service."</p>
-                    <div class="mt-8 flex items-center gap-x-4">
-                        <img src="https://i.pravatar.cc/48?img=40" class="rounded-full" alt="">
-                        <div>
-                            <div class="font-semibold">The Henderson Family</div>
-                            <div class="text-xs text-slate-500">Callaway • Sold home Feb 2026</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
-                    <div class="flex text-amber-400 mb-4">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-slate-700 leading-relaxed">"Needed a new roof after Hurricane season. They matched us with three local roofers and negotiated $4,800 off the best bid. Saved us thousands and the work was done in 4 days."</p>
-                    <div class="mt-8 flex items-center gap-x-4">
-                        <img src="https://i.pravatar.cc/48?img=25" class="rounded-full" alt="">
-                        <div>
-                            <div class="font-semibold">Maria &amp; Luis Ramirez</div>
-                            <div class="text-xs text-slate-500">Panama City Beach • Roof Project 2025</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="testimonial-card bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
-                    <div class="flex text-amber-400 mb-4">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-slate-700 leading-relaxed">"Bought my first commercial property through them — a small warehouse in the industrial park. They found it before it hit the market and got me in at a price I still can’t believe. True professionals."</p>
-                    <div class="mt-8 flex items-center gap-x-4">
-                        <img src="https://i.pravatar.cc/48?img=15" class="rounded-full" alt="">
-                        <div>
-                            <div class="font-semibold">Derek Thompson</div>
-                            <div class="text-xs text-slate-500">Owner, Thompson Marine Services • Bay County</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <a href="#contact" class="inline-flex items-center justify-center gap-x-2 text-sm font-semibold text-teal-700 hover:text-teal-800">
-                    READ MORE SUCCESS STORIES <i class="fa-solid fa-arrow-right ml-1"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT US -->
-    <section id="about" class="py-20 bg-white border-t border-slate-100">
-        <div class="tail-container">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div>
-                    <div class="text-teal-700 text-xs font-extrabold tracking-[2px]">OUR STORY</div>
-                    <h2 class="section-header text-5xl font-black tracking-tighter text-slate-900 mt-4">A middleman who actually cares about the community.</h2>
-                    
-                    <div class="prose prose-slate mt-8 text-[15px] leading-relaxed">
-                        <p>850 Bay County Middleman was founded in 2015 by lifelong Bay County resident <span class="font-semibold">Mike “Coastal” Rivera</span>. After spending 12 years in real estate and seeing too many families and small business owners get taken advantage of by out-of-town brokers and online middlemen, Mike decided to build something better — a truly local service that puts people first.</p>
-                        
-                        <p class="mt-4">Today, our small team of 7 (all locals) has helped thousands of neighbors buy homes, sell boats, find reliable contractors, and transition businesses — all while keeping money circulating right here in Bay County.</p>
-                    </div>
-                    
-                    <div class="mt-8 flex items-center gap-x-4">
-                        <div class="flex -space-x-2">
-                            <img src="https://i.pravatar.cc/40?img=68" class="rounded-full ring-2 ring-white" alt="">
-                            <img src="https://i.pravatar.cc/40?img=47" class="rounded-full ring-2 ring-white" alt="">
-                            <img src="https://i.pravatar.cc/40?img=12" class="rounded-full ring-2 ring-white" alt="">
-                        </div>
-                        <div class="text-sm">
-                            <span class="font-semibold">Mike Rivera</span> &amp; Team<br>
-                            <span class="text-xs text-slate-500">Panama City natives • 11 years strong</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="relative">
-                    <div class="aspect-[16/13] bg-slate-900 rounded-3xl overflow-hidden shadow-2xl">
-                        <img src="https://picsum.photos/id/1018/800/600" class="w-full h-full object-cover" alt="Mike Rivera and team at 850 Bay County Middleman office overlooking St. Andrews Bay">
-                    </div>
-                    <div class="absolute -bottom-6 -right-6 bg-white p-5 rounded-3xl shadow-xl border border-slate-100 max-w-[240px]">
-                        <div class="flex items-center gap-x-3">
-                            <div>
-                                <div class="font-black text-3xl text-teal-700">11</div>
-                                <div class="text-xs text-slate-500 -mt-1">YEARS</div>
-                            </div>
-                            <div class="text-sm leading-tight">of keeping Bay County deals local and fair</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT / GET STARTED -->
-    <section id="contact" class="py-20 bg-slate-900 text-white">
-        <div class="tail-container">
-            <div class="max-w-5xl mx-auto">
-                <div class="grid lg:grid-cols-12 gap-x-16">
-                    <!-- Left: Form -->
-                    <div class="lg:col-span-7">
-                        <div class="mb-10">
-                            <div class="uppercase text-teal-400 text-xs tracking-[3px] font-bold">LET'S MAKE A DEAL</div>
-                            <h2 class="text-white text-5xl font-black tracking-tighter mt-3">Ready to get started?</h2>
-                            <p class="text-xl text-slate-300 mt-4 max-w-md">Tell us a little about what you're looking for. We'll reach out within 2 hours (usually much sooner).</p>
-                        </div>
-                        
-                        <form id="deal-form" class="space-y-6">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label class="text-xs font-semibold tracking-wider text-slate-400 block mb-2">YOUR NAME</label>
-                                    <input type="text" id="name" required 
-                                           class="w-full bg-slate-800 border border-slate-700 focus:border-teal-500 text-white placeholder:text-slate-500 rounded-2xl px-5 py-3.5 text-sm outline-none transition-colors">
-                                </div>
-                                <div>
-                                    <label class="text-xs font-semibold tracking-wider text-slate-400 block mb-2">PHONE NUMBER</label>
-                                    <input type="tel" id="phone" required placeholder="(850) 555-0123"
-                                           class="w-full bg-slate-800 border border-slate-700 focus:border-teal-500 text-white placeholder:text-slate-500 rounded-2xl px-5 py-3.5 text-sm outline-none transition-colors">
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <label class="text-xs font-semibold tracking-wider text-slate-400 block mb-2">EMAIL ADDRESS</label>
-                                <input type="email" id="email" required 
-                                       class="w-full bg-slate-800 border border-slate-700 focus:border-teal-500 text-white placeholder:text-slate-500 rounded-2xl px-5 py-3.5 text-sm outline-none transition-colors">
-                            </div>
-                            
-                            <div>
-                                <label class="text-xs font-semibold tracking-wider text-slate-400 block mb-2">WHAT ARE YOU LOOKING FOR?</label>
-                                <select id="service-type" required 
-                                        class="w-full bg-slate-800 border border-slate-700 focus:border-teal-500 text-white rounded-2xl px-5 py-3.5 text-sm outline-none transition-colors">
-                                    <option value="">Select a service...</option>
-                                    <option value="real-estate">Real Estate (buying or selling)</option>
-                                    <option value="vehicle">Vehicle or Boat</option>
-                                    <option value="home-services">Home Services / Contractor</option>
-                                    <option value="business">Buying or Selling a Business</option>
-                                    <option value="estate">Estate or Personal Property Sale</option>
-                                    <option value="other">Something else (custom deal)</option>
-                                </select>
-                            </div>
-                            
-                            <div>
-                                <label class="text-xs font-semibold tracking-wider text-slate-400 block mb-2">TELL US MORE ABOUT YOUR DEAL</label>
-                                <textarea id="message" rows="4" required placeholder="I'm looking to sell my 3/2 home in Lynn Haven by June..." 
-                                          class="w-full resize-y bg-slate-800 border border-slate-700 focus:border-teal-500 text-white placeholder:text-slate-500 rounded-3xl px-5 py-4 text-sm outline-none transition-colors"></textarea>
-                            </div>
-                            
-                            <button type="submit"
-                                    class="w-full py-4 bg-white hover:bg-slate-100 active:bg-white transition-colors text-teal-900 font-extrabold text-lg rounded-3xl flex items-center justify-center gap-x-3 shadow-xl">
-                                <span>SUBMIT MY DEAL REQUEST</span>
-                                <i class="fa-solid fa-paper-plane"></i>
-                            </button>
-                            
-                            <p class="text-center text-xs text-slate-400">We respect your privacy. Your info is never shared.</p>
-                        </form>
-                    </div>
-                    
-                    <!-- Right: Contact Info -->
-                    <div class="lg:col-span-5 mt-16 lg:mt-0">
-                        <div class="bg-slate-800 rounded-3xl p-9 border border-slate-700">
-                            <div class="font-bold text-xl mb-6 flex items-center gap-x-3">
-                                <i class="fa-solid fa-map-marker-alt text-teal-400"></i> 
-                                <span>Visit Our Office</span>
-                            </div>
-                            
-                            <div class="space-y-6 text-sm">
-                                <div>
-                                    <div class="text-slate-400 text-xs">MAIN OFFICE</div>
-                                    <div class="font-medium mt-0.5">1423 West 23rd Street<br>Panama City, FL 32405</div>
-                                </div>
-                                
-                                <div>
-                                    <div class="text-slate-400 text-xs">PHONE</div>
-                                    <a href="tel:8505550123" class="font-medium hover:text-teal-400 transition">(850) 555-0123</a>
-                                </div>
-                                
-                                <div>
-                                    <div class="text-slate-400 text-xs">EMAIL</div>
-                                    <a href="mailto:hello@850baycountymiddleman.com" class="font-medium hover:text-teal-400 transition">hello@850baycountymiddleman.com</a>
-                                </div>
-                                
-                                <div>
-                                    <div class="text-slate-400 text-xs">HOURS</div>
-                                    <div class="font-medium">Mon–Fri: 8:30am – 6:00pm<br>Sat: 9:00am – 2:00pm<br>Sun: Closed (emergencies only)</div>
-                                </div>
-                            </div>
-                            
-                            <div class="mt-8 pt-8 border-t border-slate-700">
-                                <div class="uppercase text-xs tracking-[1.5px] text-teal-400 font-bold mb-3">FOLLOW OUR DEALS</div>
-                                <div class="flex gap-x-4 text-xl">
-                                    <a href="#" class="hover:text-teal-400 transition"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#" class="hover:text-teal-400 transition"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#" class="hover:text-teal-400 transition"><i class="fa-brands fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Quick map placeholder -->
-                        <div class="mt-6 rounded-3xl overflow-hidden border border-slate-700 local-map h-52 relative">
-                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60 flex items-end p-5">
-                                <div>
-                                    <div class="text-white text-xs font-semibold">St. Andrews Bay • 4 min from our office</div>
-                                    <div class="text-[10px] text-white/70">Click to open in Google Maps</div>
-                                </div>
-                            </div>
-                            <a href="https://maps.google.com/?q=1423+West+23rd+Street+Panama+City+FL+32405" target="_blank" class="absolute inset-0"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <div class="bg-teal-700 py-9">
-        <div class="tail-container text-center">
-            <div class="text-white text-2xl font-semibold">Ready to skip the middleman drama and get your deal done right?</div>
-            <a href="#contact" class="mt-5 inline-block bg-white text-teal-800 hover:bg-slate-100 transition font-extrabold px-10 py-4 rounded-3xl text-lg">LET'S TALK • NO PRESSURE</a>
-        </div>
+  <!-- ICON BAR -->
+  <div class="bg-zinc-900 py-6 border-b border-yellow-400/20">
+    <div class="max-w-5xl mx-auto px-6 flex flex-wrap justify-center gap-x-14 gap-y-4 text-center">
+      <div class="flex items-center gap-3"><i class="fas fa-clock text-2xl gold"></i><span class="font-semibold">24/7 Availability</span></div>
+      <div class="flex items-center gap-3"><i class="fas fa-running text-2xl gold"></i><span class="font-semibold">Gigs &amp; Side Hustles</span></div>
+      <div class="flex items-center gap-3"><i class="fas fa-wallet text-2xl gold"></i><span class="font-semibold">Cash Opportunities</span></div>
+      <div class="flex items-center gap-3"><i class="fas fa-gem text-2xl gold"></i><span class="font-semibold">Premium Networking</span></div>
     </div>
+  </div>
 
-    <!-- FOOTER -->
-    <footer class="bg-slate-950 text-slate-400 py-12 text-sm">
-        <div class="tail-container">
-            <div class="flex flex-col md:flex-row justify-between gap-y-10">
-                <div>
-                    <div class="flex items-center gap-x-3 mb-4">
-                        <div class="w-9 h-9 bg-teal-700 rounded-2xl flex items-center justify-center">
-                            <div class="text-white text-xl font-black tracking-tighter">850</div>
-                        </div>
-                        <div class="font-black text-white tracking-tighter text-xl">BAY COUNTY MIDDLEMAN</div>
-                    </div>
-                    <div class="max-w-xs text-xs">Proudly serving Panama City, Panama City Beach, Lynn Haven, Callaway, Springfield, and all of Bay County, Florida.</div>
-                    
-                    <div class="mt-6 text-[10px] opacity-60">© 2015–2026 850 Bay County Middleman, LLC. All rights reserved.</div>
-                </div>
-                
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-x-16 gap-y-8 text-xs">
-                    <div>
-                        <div class="font-semibold text-white mb-3 tracking-wider">QUICK LINKS</div>
-                        <div class="space-y-1.5">
-                            <a href="#services" class="block hover:text-white transition">Our Services</a>
-                            <a href="#how" class="block hover:text-white transition">How We Work</a>
-                            <a href="#about" class="block hover:text-white transition">Our Story</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-white mb-3 tracking-wider">LEGAL</div>
-                        <div class="space-y-1.5">
-                            <a href="#" class="block hover:text-white transition">Privacy Policy</a>
-                            <a href="#" class="block hover:text-white transition">Terms of Service</a>
-                            <a href="#" class="block hover:text-white transition">Satisfaction Guarantee</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-white mb-3 tracking-wider">CONNECT</div>
-                        <div class="space-y-1.5">
-                            <a href="tel:8505550123" class="block hover:text-white transition">(850) 555-0123</a>
-                            <a href="mailto:hello@850baycountymiddleman.com" class="block hover:text-white transition">Email Us</a>
-                            <a href="#" class="block hover:text-white transition">Facebook</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-14 pt-8 border-t border-slate-800 text-[10px] flex flex-col md:flex-row items-center justify-between gap-y-2 text-center md:text-left">
-                <div>This is a professional demo website created for illustrative purposes.</div>
-                <div class="text-teal-600">Built with ❤️ for the 850 community</div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Success Modal -->
-    <div id="success-modal" class="hidden fixed inset-0 bg-black/70 backdrop-blur z-[100] flex items-center justify-center p-6">
-        <div onclick="event.target.id === 'success-modal' && hideModal()" class="absolute inset-0"></div>
-        
-        <div class="bg-white rounded-3xl max-w-md w-full relative shadow-2xl overflow-hidden">
-            <div class="px-8 pt-9 pb-8 text-center">
-                <div class="mx-auto w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
-                    <i class="fa-solid fa-check-circle text-emerald-600 text-6xl"></i>
-                </div>
-                
-                <h3 class="text-3xl font-black tracking-tight text-slate-900">Deal Request Received!</h3>
-                <p class="mt-3 text-slate-600">Thank you! One of our local deal specialists will call or text you within the next 2 hours.</p>
-                
-                <div class="mt-8 text-xs bg-emerald-50 text-emerald-700 px-4 py-3 rounded-2xl inline-flex items-center gap-x-2">
-                    <i class="fa-solid fa-info-circle"></i>
-                    <span>Check your phone — we usually respond even faster.</span>
-                </div>
-            </div>
-            
-            <div class="border-t px-8 py-5 flex justify-center">
-                <button onclick="hideModal()" 
-                        class="font-semibold text-sm px-9 py-3 hover:bg-slate-100 rounded-3xl transition-colors">CLOSE WINDOW</button>
-            </div>
-        </div>
+  <!-- ABOUT -->
+  <section class="py-16 px-6 bg-black">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl font-bold gold mb-6">I Make Connections Happen</h2>
+      <p class="text-lg text-slate-300">Hardworking people get matched with flexible gigs and reliable work. Local businesses and homeowners get trusted workers fast. Need cash quick? Need help on a project? Have inventory to move? I make it happen — 24/7 across Bay County.</p>
     </div>
+  </section>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        // Tailwind script
-        function initializeTailwind() {
-            document.documentElement.style.setProperty('--accent', '#14b8a6');
-            
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        fontFamily: {
-                            'serif-custom': ['Playfair Display', 'Georgia', 'serif']
-                        }
-                    }
-                }
-            };
-        }
+  <!-- SERVICES -->
+  <section id="services" class="py-16 px-6 bg-zinc-900">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center gold mb-10">What I Deliver</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-zinc-950 p-8 rounded-3xl border border-yellow-400/30 hover:border-yellow-400 transition-all">
+          <h3 class="text-2xl font-semibold mb-3 gold">Need Workers?</h3>
+          <p class="text-slate-300">Reliable, hardworking people for any job — fast. No bad hires.</p>
+        </div>
+        <div class="bg-zinc-950 p-8 rounded-3xl border border-yellow-400/30 hover:border-yellow-400 transition-all">
+          <h3 class="text-2xl font-semibold mb-3 gold">Need Cash Fast?</h3>
+          <p class="text-slate-300">Gigs, side hustles, and immediate paying opportunities in Bay County.</p>
+        </div>
+        <div class="bg-zinc-950 p-8 rounded-3xl border border-yellow-400/30 hover:border-yellow-400 transition-all">
+          <h3 class="text-2xl font-semibold mb-3 gold">Sell Your Inventory</h3>
+          <p class="text-slate-300">I connect you with local buyers and move your product quickly.</p>
+        </div>
+        <div class="bg-zinc-950 p-8 rounded-3xl border border-yellow-400/30 hover:border-yellow-400 transition-all">
+          <h3 class="text-2xl font-semibold mb-3 gold">Entrepreneurship &amp; Networking</h3>
+          <p class="text-slate-300">Affiliate programs, business opportunities, and real local connections.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-16 px-6 bg-black">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold text-center gold mb-10">Real People. Real Results.</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-zinc-950 p-8 rounded-3xl border border-yellow-400/30">
+          <p class="text-slate-300">"Wayne found me a crew for my flip in one day. Saved me thousands."</p>
+          <p class="mt-6 text-sm font-semibold">— Mike R., Contractor, Panama City</p>
+        </div>
+        <div class="bg-zinc-950 p-8 rounded-3xl border border-yellow-400/30">
+          <p class="text-slate-300">"Got connected to a side hustle the same day I called. Cash in hand by Friday."</p>
+          <p class="mt-6 text-sm font-semibold">— Sarah T., Bay County</p>
+        </div>
+        <div class="bg-zinc-950 p-8 rounded-3xl border border-yellow-400/30">
+          <p class="text-slate-300">"Moved my entire inventory in 48 hours through his network. Unreal."</p>
+          <p class="mt-6 text-sm font-semibold">— David L., Local Business Owner</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 px-6 bg-zinc-900">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-4xl font-bold text-center gold mb-8">Let's Make It Happen</h2>
+      
+      <form action="https://formspree.io/f/mbllyqjn" method="POST" class="space-y-6">
+        <div class="grid md:grid-cols-2 gap-6">
+          <input type="text" name="name" placeholder="Your Name" required class="w-full bg-zinc-950 border border-yellow-400/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:border-yellow-400">
+          <input type="tel" name="phone" placeholder="Phone Number" class="w-full bg-zinc-950 border border-yellow-400/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:border-yellow-400">
+        </div>
+        <textarea name="message" rows="5" placeholder="What do you need? (workers, gigs, inventory, free quote, etc.)" required class="w-full bg-zinc-950 border border-yellow-400/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:border-yellow-400"></textarea>
         
-        // Navbar scroll effect
-        function initNavbar() {
-            const navbar = document.getElementById('navbar');
-            let lastScroll = 0;
-            
-            window.addEventListener('scroll', () => {
-                const currentScroll = window.pageYOffset;
-                
-                if (currentScroll > 50) {
-                    navbar.classList.add('nav-scrolled');
-                } else {
-                    navbar.classList.remove('nav-scrolled');
-                }
-                
-                lastScroll = currentScroll;
-            });
-        }
-        
-        // Mobile menu toggle
-        function initMobileMenu() {
-            const btn = document.getElementById('mobile-menu-btn');
-            const menu = document.getElementById('mobile-menu');
-            
-            btn.addEventListener('click', () => {
-                const isHidden = menu.classList.contains('hidden');
-                
-                if (isHidden) {
-                    menu.classList.remove('hidden');
-                    btn.innerHTML = '<i class="fa-solid fa-times text-xl"></i>';
-                } else {
-                    menu.classList.add('hidden');
-                    btn.innerHTML = '<i class="fa-solid fa-bars text-xl"></i>';
-                }
-            });
-            
-            // Close menu when clicking links
-            menu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    menu.classList.add('hidden');
-                    btn.innerHTML = '<i class="fa-solid fa-bars text-xl"></i>';
-                });
-            });
-        }
-        
-        // Animate stats numbers
-        function animateStats() {
-            const stats = document.querySelectorAll('.stat-number');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        stats.forEach(stat => {
-                            const target = parseInt(stat.getAttribute('data-target'));
-                            const duration = 1800;
-                            const startTime = performance.now();
-                            
-                            function update(currentTime) {
-                                const elapsed = currentTime - startTime;
-                                const progress = Math.min(elapsed / duration, 1);
-                                
-                                // Easing function
-                                const eased = 1 - Math.pow(1 - progress, 3);
-                                
-                                let current;
-                                if (target === 98 || target === 11) {
-                                    current = Math.floor(target * eased);
-                                } else {
-                                    current = Math.floor(target * eased);
-                                }
-                                
-                                stat.textContent = current.toLocaleString();
-                                
-                                if (progress < 1) {
-                                    requestAnimationFrame(update);
-                                } else {
-                                    stat.textContent = target.toLocaleString();
-                                    if (target === 98) stat.textContent = target + '%';
-                                }
-                            }
-                            
-                            requestAnimationFrame(update);
-                        });
-                        
-                        observer.disconnect();
-                    }
-                });
-            }, { threshold: 0.6 });
-            
-            const statsSection = document.querySelector('.bg-white.border-b');
-            if (statsSection) observer.observe(statsSection);
-        }
-        
-        // Form handling
-        function initForm() {
-            const form = document.getElementById('deal-form');
-            const modal = document.getElementById('success-modal');
-            
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Simulate processing
-                const submitBtn = form.querySelector('button[type="submit"]');
-                const originalText = submitBtn.innerHTML;
-                
-                submitBtn.disabled = true;
-                submitBtn.innerHTML = `
-                    <span class="flex items-center justify-center gap-x-2">
-                        <i class="fa-solid fa-spinner fa-spin"></i> 
-                        <span>SUBMITTING...</span>
-                    </span>
-                `;
-                
-                setTimeout(() => {
-                    // Show success
-                    form.reset();
-                    submitBtn.disabled = false;
-                    submitBtn.innerHTML = originalText;
-                    
-                    modal.classList.remove('hidden');
-                    modal.classList.add('flex');
-                    
-                    // Optional: track event or console
-                    console.log('%c[850 Middleman] Deal request submitted successfully', 'color:#14b8a6');
-                }, 1250);
-            });
-            
-            // Close modal on escape key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-                    hideModal();
-                }
-            });
-        }
-        
-        function hideModal() {
-            const modal = document.getElementById('success-modal');
-            modal.classList.remove('flex');
-            modal.classList.add('hidden');
-        }
-        
-        // Smooth scroll for anchor links
-        function initSmoothScroll() {
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetElement = document.getElementById(targetId);
-                    
-                    if (targetElement) {
-                        e.preventDefault();
-                        
-                        const offset = 80; // navbar height
-                        const elementPosition = targetElement.getBoundingClientRect().top;
-                        const offsetPosition = elementPosition + window.pageYOffset - offset;
-                        
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-        }
-        
-        // Add subtle hover effects to service cards
-        function enhanceServiceCards() {
-            const cards = document.querySelectorAll('.service-card');
-            cards.forEach(card => {
-                card.addEventListener('mouseenter', () => {
-                    card.style.borderColor = '#14b8a6';
-                });
-                card.addEventListener('mouseleave', () => {
-                    card.style.borderColor = '#e2e8f0';
-                });
-            });
-        }
-        
-        // Keyboard accessibility hint
-        function addAccessibility() {
-            // Make sure all interactive elements are focusable
-            console.log('%c[850 Bay County Middleman] Website initialized successfully', 'color:#64748b');
-        }
-        
-        // Main initialization
-        function initWebsite() {
-            initializeTailwind();
-            initNavbar();
-            initMobileMenu();
-            animateStats();
-            initForm();
-            initSmoothScroll();
-            enhanceServiceCards();
-            addAccessibility();
-            
-            // Easter egg: Konami code for fun
-            let konami = '';
-            const konamiCode = 'ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba';
-            document.addEventListener('keydown', function(e) {
-                konami += e.key;
-                if (konami.length > konamiCode.length) konami = konami.slice(1);
-                if (konami === konamiCode) {
-                    document.body.style.transition = 'filter 0.4s';
-                    document.body.style.filter = 'hue-rotate(180deg)';
-                    setTimeout(() => {
-                        document.body.style.filter = 'none';
-                    }, 1200);
-                    konami = '';
-                }
-            });
-            
-            // Preload hint
-            console.log('%c✅ 850 Bay County Middleman website ready — all features loaded.', 'color:#0f766e; font-size:9px');
-        }
-        
-        // Boot the site
-        window.onload = initWebsite;
-        
-        // Make hideModal globally available if needed
-        window.hideModal = hideModal;
-    </script>
+        <button type="submit" class="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-6 rounded-full text-xl transition-all">SEND MESSAGE — I'LL REPLY FAST</button>
+      </form>
+      
+      <div class="text-center mt-10 space-y-4">
+        <a href="tel:8506303252" class="block text-4xl gold font-bold hover:text-yellow-300">850-630-3252</a>
+        <a href="mailto:siltanenwayne@gmail.com" class="block text-xl hover:text-yellow-300">siltanenwayne@gmail.com</a>
+        <a href="https://www.youtube.com/850BayCountyMiddleman" target="_blank" class="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300">
+          <i class="fab fa-youtube text-2xl"></i> Watch on YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-10 text-center border-t border-yellow-400/20">
+    <p class="text-2xl font-bold gold">Wayne Campbell</p>
+    <p class="text-xl">850 Bay County Middleman</p>
+    <p class="mt-6 text-sm text-slate-400">Serving Bay County &amp; Surrounding 850 Areas • Available 24/7</p>
+    <div class="mt-8 flex justify-center gap-6 text-2xl">
+      <a href="tel:8506303252" class="hover:text-yellow-400"><i class="fas fa-phone"></i></a>
+      <a href="mailto:siltanenwayne@gmail.com" class="hover:text-yellow-400"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.youtube.com/850BayCountyMiddleman" target="_blank" class="hover:text-yellow-400"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
 </body>
 </html>
